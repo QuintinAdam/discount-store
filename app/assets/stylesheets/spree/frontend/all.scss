@@ -10,7 +10,23 @@
  *= require spree/frontend/spree_reviews
  *= require spree/frontend/spree_static_content
  *= require spree/frontend/spree_quick_view
+ *= require frontend/spree_news
  *= require font-awesome
  *= require_self
  *= require_tree .
 */
+
+nav#pages .pages-root {
+  text-transform: uppercase;
+  border-bottom: none;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+// nav#pages.sidebar-item ul.pages-list li {
+//   list-style: none;
+//   a {color: #555;}
+//   &:first-child {
+//     border-top-right-radius: 4px;
+//     border-top-left-radius: 4px;
+//   }
+// }

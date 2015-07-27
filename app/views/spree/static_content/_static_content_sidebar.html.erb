@@ -1,0 +1,10 @@
+<% if Spree::Page.by_store(current_store).visible.sidebar_links.any? %>
+  <nav id="pages" class="sidebar-item">
+    <h4 class="taxonomy-root">
+      <%= plural_resource_name(Spree::Page) %>
+    </h4>
+    <div class="list-group">
+      <%= render partial: 'spree/static_content/side_bar_static_content_list', collection: Spree::Page.visible.sidebar_links, as: :page %>
+    </div>
+  </nav>
+<% end %>
