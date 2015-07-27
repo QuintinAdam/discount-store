@@ -9,4 +9,5 @@
 //= require spree/backend
 //= require spree/backend/spree_reviews
 //= require spree/backend/spree_social_products
+//= require spree/backend/spree_quick_view
 //= require_tree .

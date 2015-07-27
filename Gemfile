@@ -77,5 +77,8 @@ gem 'spree_static_content', git: 'git@github.com:spree-contrib/spree_static_cont
 gem 'spree_related_products', git: 'git@github.com:spree-contrib/spree_related_products.git', branch: '3-0-stable'
 gem 'spree_reviews', git: 'git@github.com:spree-contrib/spree_reviews.git', branch: '3-0-stable'
 gem 'spree_social_products', git: 'git@github.com:spree-contrib/spree_social_products.git', branch: '3-0-stable'
+gem 'spree_quick_view', git: 'git@github.com:ronzalo/spree_quick_view.git', branch: 'master'
+gem 'spree_contact_us', git: 'git@github.com:spree-contrib/spree_contact_us.git', branch: '3-0-stable'
+gem 'spree_news', git: 'git@github.com:asabourin/spree_news.git', branch: '3-0-stable'
 
 
