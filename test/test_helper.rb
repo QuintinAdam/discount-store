@@ -1,10 +1,30 @@
+require 'simplecov'
+SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
+  SimpleCov::Formatter::HTMLFormatter
+]
+SimpleCov.start 'rails'
+
 ENV['RAILS_ENV'] ||= 'test'
 require File.expand_path('../../config/environment', __FILE__)
 require 'rails/test_help'
+require "minitest/rails"
+require "minitest/spec"
+require "minitest/pride"
+require "minitest/focus"
+
+require 'ffaker'
+require 'spree/testing_support/factories'
+require 'spree/testing_support/controller_requests'
+# require 'spree/testing_support/authorization_helpers'
+require 'spree/testing_support/url_helpers'
 
 class ActiveSupport::TestCase
-  # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
-  fixtures :all
+  ActiveRecord::Migration.check_pending!
+  include FactoryGirl::Syntax::Methods
+end
 
-  # Add more helper methods to be used by all tests here...
+class ActionController::TestCase
+  include FactoryGirl::Syntax::Methods
+  include Devise::TestHelpers
+  include Spree::TestingSupport::UrlHelpers
 end
