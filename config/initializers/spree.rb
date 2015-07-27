@@ -42,8 +42,8 @@ Spree.config do |config|
   # config.expedited_exchanges =  false # NOTE this requires payment profiles to be supported on your gateway of choice as well as a delayed job handler to be configured with activejob. kicks off an exchange shipment upon return authorization save. charge customer if they do not return items within timely manner.
   # config.expedited_exchanges_days_window =  14 # the amount of days the customer has to return their item after the expedited exchange is shipped in order to avoid being charged
   # config.last_check_for_spree_alerts =  nil
-  config.layout =  'layouts/application'
-  # config.max_level_in_taxons_menu =  1 # maximum nesting level in taxons menu
+  config.layout =  'layouts/spree_application'
+  config.max_level_in_taxons_menu = 2 # maximum nesting level in taxons menu
   # config.orders_per_page =  15
   # config.properties_per_page =  15
   # config.products_per_page =  12
