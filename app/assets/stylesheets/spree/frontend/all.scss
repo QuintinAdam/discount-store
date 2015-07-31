@@ -16,17 +16,13 @@
  *= require_tree .
 */
 
-nav#pages .pages-root {
-  text-transform: uppercase;
-  border-bottom: none;
-  margin-bottom: 10px;
-  font-size: 18px;
+#spree-header figure {
+  .title {
+    margin: 0;
+    color: white;
+  }
+  .subtitle {
+    margin: 0;
+    color: white;
+  }
 }
-// nav#pages.sidebar-item ul.pages-list li {
-//   list-style: none;
-//   a {color: #555;}
-//   &:first-child {
-//     border-top-right-radius: 4px;
-//     border-top-left-radius: 4px;
-//   }
-// }

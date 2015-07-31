@@ -1,0 +1,16 @@
+<div id="spree-header">
+  <header id="header" data-hook>
+    <div class="container">
+      <div class="row">
+        <figure id="" class="col-md-4">
+          <h2 class='title'>Discount Juicers</h2>
+          <h5 class='subtitle'>Selling Juicers Online Since 1998</h4>
+        </figure>
+        <%= render :partial => 'spree/shared/nav_bar' %>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <%= render :partial => 'spree/shared/main_nav_bar' if store_menu? %>
+  </div>
+</div>

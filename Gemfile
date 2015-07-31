@@ -43,7 +43,7 @@ end
 
 group :development, :test do
   gem 'jazz_fingers'
-  gem 'ffaker'
+  gem 'ffaker', '~> 2.0.0'
   gem 'factory_girl_rails'
 end
 
