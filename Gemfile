@@ -8,7 +8,6 @@ gem 'puma'
 gem 'devise'
 gem 'figaro'
 gem 'font-awesome-rails'
-# gem 'bootstrap-sass'
 
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
@@ -59,7 +58,6 @@ group :production do
   # rails12factor
   # Logging
   gem 'lograge' # more readable logs
-  # gem 'logstash-event' # for logstash json format
 end
 
 gem 'spree', git: 'git@github.com:spree/spree.git', branch: '3-0-stable'
