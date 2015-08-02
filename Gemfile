@@ -13,7 +13,6 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
-# gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 
 # gem 'rack-ssl-enforcer'
@@ -73,5 +72,3 @@ gem 'spree_social_products', git: 'git@github.com:spree-contrib/spree_social_pro
 gem 'spree_quick_view', git: 'git@github.com:ronzalo/spree_quick_view.git', branch: 'master'
 gem 'spree_contact_us', git: 'git@github.com:spree-contrib/spree_contact_us.git', branch: '3-0-stable'
 gem 'spree_news', git: 'git@github.com:asabourin/spree_news.git', branch: '3-0-stable'
-
-
